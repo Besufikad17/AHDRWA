@@ -68,12 +68,16 @@ const Popup = ({ d }) => {
         ys.push(jdata[prop])
     }
 
+    var max = xs[xs.length - 1]
+    var max_val = ys[ys.length - 1]
+    console.log(max, max_val);
+
     const toggle = () => {
         setIsOpen({ isOp: !isOpen.isOp })
     }
 
     return (
-        <Modal isOpen={isOpen.isOp} toggle={toggle} size="xl"  aria-labelledby="contained-modal-title-vcenter"centered>
+        <Modal isOpen={isOpen.isOp} toggle={toggle} size="xl" aria-labelledby="contained-modal-title-vcenter" centered>
             <ModalHeader><h5>Recognition result</h5></ModalHeader>
             <ModalBody>
 
@@ -84,31 +88,37 @@ const Popup = ({ d }) => {
                                 Chart
                             </CardTitle>
                             <CardBody style={{ textAlign: "left" }}>
-                                        <Chart chartData={{
-                                            labels: xs,
-                                            datasets: [
-                                                {
-                                                    label: 'My First Dataset',
-                                                    data: ys,
-                                                    backgroundColor: [
-                                                        'rgba(255, 99, 132, 0.2)',
-                                                        'rgba(255, 159, 64, 0.2)',
-                                                        'rgba(255, 205, 86, 0.2)',
-                                                        'rgba(75, 192, 192, 0.2)',
-                                                        'rgba(54, 162, 235, 0.2)',
-                                                        'rgba(153, 102, 255, 0.2)',
-                                                        'rgba(201, 203, 207, 0.2)'
-                                                    ]
-                                                }
+                                <Chart chartData={{
+                                    labels: xs,
+                                    datasets: [
+                                        {
+                                            label: 'My First Dataset',
+                                            data: ys,
+                                            backgroundColor: [
+                                                'rgba(255, 99, 132, 0.2)',
+                                                'rgba(255, 159, 64, 0.2)',
+                                                'rgba(255, 205, 86, 0.2)',
+                                                'rgba(75, 192, 192, 0.2)',
+                                                'rgba(54, 162, 235, 0.2)',
+                                                'rgba(153, 102, 255, 0.2)',
+                                                'rgba(201, 203, 207, 0.2)'
                                             ]
-                                        }} />
+                                        }
+                                    ]
+                                }} />
+                                <nav>
+                                    <ul>
+                                        <li>Result</li>
+                                        <li> {max} with {max_val} % of predicition </li> <li /><li /><li /><li />
+                                    </ul>
+                                </nav>
                             </CardBody>
                         </Card>
                     </Col>
-                    <Col sm="6" style={{mariginRight: "100px"}}>
+                    <Col sm="6" style={{ mariginRight: "100px" }}>
                         <Card body>
                             <CardTitle tag="h5">
-                               JSON output
+                                JSON output
                             </CardTitle>
                             <CardBody>
                                 <ReactJson src={jdata} />
