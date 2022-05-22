@@ -5,12 +5,12 @@
 # Components
 
 [Backend](https://github.com/Besufikad17/AHDRWA-backend)
-[Bot]()
+[Bot](https://github.com/binitech/ahdrwa-bot)
 [Docs](https://stupendous-meringue-4b95b0.netlify.app/)
 
 # Demo
 
-
+![image](https://github.com/Besufikad17/AHDRWA/media/demo.mp4)
 
 # Devs
 
