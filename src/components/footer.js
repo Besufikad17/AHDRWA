@@ -31,7 +31,7 @@ const Footer = () => {
                 </div>
                 <div className="footer-right">
                     <p className="footer-company-about">
-                        <span><a href="/" style={{textDecoration:"none"}}>About</a></span>
+                        <span><a href="https://stupendous-meringue-4b95b0.netlify.app/" style={{textDecoration:"none"}}>About</a></span>
                     </p>
                     <i><a  style={{ marginRight: "3px"}} href="https://t.me/CSEC_Project_Bot"><FaTelegram /></a></i>
                     <i><a href="https://github.com/Besufikad17/AHDRWA"><FaGithub /></a></i>

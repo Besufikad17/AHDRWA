@@ -69,7 +69,7 @@ const Popup = ({ d }) => {
     }
 
     var max = xs[xs.length - 1]
-    var max_val = ys[ys.length - 1]
+    var max_val = Math.floor(ys[ys.length - 1])
     console.log(max, max_val);
 
     const toggle = () => {
