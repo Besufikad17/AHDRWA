@@ -10,7 +10,7 @@
 
 # Demo
 
-![image](https://github.com/Besufikad17/AHDRWA/media/demo.mp4)
+![image](https://github.com/Besufikad17/AHDRWA/media/demo.gif)
 
 # Devs
 
