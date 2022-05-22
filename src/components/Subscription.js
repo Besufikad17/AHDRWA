@@ -43,7 +43,7 @@ const Subscription = () => {
                                 <nav>
                                     <ul>
                                         <li><Button style={{ background: "#292c34" }} onClick={toggle}>
-                                            <a href="https://t.me/CSEC_Project_Bot" target="_blank" style={{ textDecoration: "none" }}>Subscribe</a>
+                                            <a href="https://t.me/ahdrwa_bot" target="_blank" style={{ textDecoration: "none" }}>Subscribe</a>
                                         </Button></li>
                                         <li><Button style={{ background: "#292c34" }} onClick={toggle}>No thanks</Button></li>
                                     </ul>

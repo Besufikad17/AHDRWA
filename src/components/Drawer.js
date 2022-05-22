@@ -1,10 +1,7 @@
-import axios from "axios";
 import React, { Component } from "react";
 import CanvasDraw from "react-canvas-draw";
 import classNames from "../index.css";
 import Popup from "./Popup";
-import { Bar } from "react-chartjs-2";
-import Plot from 'react-plotly.js';
 import { Chart, registerables } from 'chart.js';
 
 Chart.register(...registerables);
@@ -65,49 +62,11 @@ class Drawer extends Component {
         );
 
         const base64 = this.saveableCanvas.getDataURL();
-        // console.log(base64);
+        console.log(base64);
         this.setState({
             base64: base64,
             isOpen: !this.state.isOpen
         })
-        console.log(this.state);
-        const file = this.dataURLtoFile(base64, 'p.png')
-
-        var data = new FormData()
-        data.append('image', file, 'p.png')
-
-        var vals = []
-        var obj = {};
-        var self = this;
-
-        axios.post('http://192.168.0.66:4545/api/digit/recognition/', data)
-            .then(function (response) {
-                vals = response.data
-                // for(var i = 0; i < vals.length; i++){
-                //   obj[vals[i][1]] = vals[i][0]
-                // }
-                // self.setState({
-                //     values: response.data,
-                //     isOpen: !self.state.isOpen
-                // })
-
-                console.log(self.state.values);
-
-                const temp = [];
-                vals.forEach(v => {
-                    temp.push(v[0] * 1000);   
-                });
-                
-                self.setState({
-                    values: temp,
-                    isOpen: !self.state.isOpen
-                })
-                console.log('Hyu', self.state.values);
-                // this.exportToJsonFile(obj);
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
     }
 
     render() {
@@ -149,52 +108,9 @@ class Drawer extends Component {
                         Erase
                     </button>
                 </div>
-                {this.state.values.length > 0 ? (
-                    // <Popup data={this.state.values}/>this.state.values.map(v => v[1])
-                    // "#469990",
-                    // "#000075",
-                    // "#e6194B",
-                    // "#f58231",
-                    // "#ffe119",
-                    // "#bfef45",
-                    // "#3cb44b",
-                    // "#42d4f4",
-                    // "#4363d8",
-                    // "#911eb4",
-                    // "#f032e6",
-                    // "#a9a9a9",
-                    // "#fabed4",
-                    // "#ffd8b1",
-                    // "#fffac8",
-                    // "#aaffc3",
-                    // "#dcbeff",
-                    // "#000000"
+                {this.state.isOpen ? (
                     <div >
-                        {/* <Bar
-                            data={{
-                                label: ["1", "2", "3"],
-                                datasets: [
-                                    {
-                                        label: "Recognition result",
-                                        data: [12, 34, 56],
-                                        backgroundColor: [
-                                            "#800000",
-                                            "#9A6324",
-                                            "#808000",
-                                           
-                                        ]
-                                    }
-                                ]
-                            }}
-                        /> */}
-                        <Plot
-                            data={[
-                                { type: 'bar', x: this.state.values.map(v => v[1]), y: this.state.values.map(v => v[1] )* 100 },
-                            ]}
-                            layout={{ width: 320, height: 240, title: 'A Fancy Plot' }}
-                        />
-                        {/* <Popup d={this.state.base64} /> */}
-
+                        <Popup d={this.state.base64} />
                     </div>
                 ) : (
                     <div />

@@ -32,10 +32,10 @@ const Ex = () => {
                         user.subscription === "standard" || user.subscription === "premium" || user.subscription === "platnium" ? (
                             <NavbarText style={{ backgroundColor: "#C39A69", fontSize: "18px" }}>Claimed</NavbarText>
                         ) : (
-                            <p> Enter your id <a href="https://t.me/CSEC_Project_Bot" target="_blank">here</a> to get the offer</p>
+                            <p> Enter your id <a href="https://t.me/ahdrwa_bot" target="_blank">here</a> to get the offer</p>
                         )
                     ): (
-                        <p> Enter your id <a href="https://t.me/CSEC_Project_Bot" target="_blank">here</a> to get the offer</p>
+                        <p> Enter your id <a href="https://t.me/ahdrwa_bot" target="_blank">here</a> to get the offer</p>
                     )}
                 </Card>
                 <Card
@@ -59,10 +59,10 @@ const Ex = () => {
                         user.subscription === "platnium" || user.subscription === "premiunm" ? (
                             <NavbarText style={{ backgroundColor: "#1892FF", fontSize: "18px" }}>Claimed</NavbarText>
                         ) : (
-                            <p> Enter your id <a href="https://t.me/CSEC_Project_Bot" target="_blank" style={{color:"black"}}>here</a> to get the offer</p>
+                            <p> Enter your id <a href="https://t.me/ahdrwa_bot" target="_blank" style={{color:"black"}}>here</a> to get the offer</p>
                         )
                     ):(
-                        <p> Enter your id <a href="https://t.me/CSEC_Project_Bot" target="_blank" style={{color:"black"}}>here</a> to get the offer</p>
+                        <p> Enter your id <a href="https://t.me/ahdrwa_bot" target="_blank" style={{color:"black"}}>here</a> to get the offer</p>
                     )}
                 </Card>
                 <Card
@@ -86,10 +86,10 @@ const Ex = () => {
                         user.subscription === "platnium" ? (
                             <NavbarText style={{ fontSize: "18px" }}>Claimed</NavbarText>
                         ) : (
-                            <p> Enter your id <a href="https://t.me/CSEC_Project_Bot" target="_blank">here</a> to get the offer</p>
+                            <p> Enter your id <a href="https://t.me/ahdrwa_bot" target="_blank">here</a> to get the offer</p>
                         )
                     ): (
-                        <p> Enter your id <a href="https://t.me/CSEC_Project_Bot" target="_blank">here</a> to get the offer</p>
+                        <p> Enter your id <a href="https://t.me/ahdrwa_bot" target="_blank">here</a> to get the offer</p>
                     )}
                 </Card>
             </CardGroup>

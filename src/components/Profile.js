@@ -60,6 +60,12 @@ const Profile = () => {
                             </nav><br />
                             <nav>
                                 <ul>
+                                    <li>Id:</li>
+                                    <li>{user.id}</li> <li /><li />
+                                </ul>
+                            </nav><br />
+                            <nav>
+                                <ul>
                                     <li>subscription:</li>
                                     <li> {user.subscription} </li> <li /><li /><li /><li />
                                 </ul>

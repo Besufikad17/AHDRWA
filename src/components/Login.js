@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import axios from "axios";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 import {
     FormGroup,
@@ -22,6 +23,7 @@ import { setErrorMsg } from "../features/errorSlice";
 
 const Login = () => {
 
+    const navigate= useNavigate();
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [msg, setMSG] = useState("");
@@ -48,6 +50,7 @@ const Login = () => {
             .then(res => {
                 console.log(res.data)
                 dispatch(login(res.data.user))
+                navigate("/");
                 toggle();
             }).catch(err => {
                 alert(err.response.data.msg);
