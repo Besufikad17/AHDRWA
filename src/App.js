@@ -1,12 +1,15 @@
 import './App.css';
-import Drawer from './components/Drawer';
-import ExportDrawer from './components/DrawerExport';
+import Home from './components/Home';
+import { Route, Routes } from 'react-router-dom';
+import Subscription from './components/Subscription';
 
 function App() {
   return (
     <div className="App">
-     {/* <Drawer/> */}
-     <ExportDrawer/>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/subscribe" element={<Subscription/>} />
+      </Routes>
     </div>
   );
 }
