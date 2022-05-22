@@ -46,7 +46,7 @@ const Login = () => {
     const submit = e => {
         e.preventDefault();
 
-        axios.post('http://localhost:5000/api/login', { username, password })
+        axios.post('https://ahdrwa-backend.herokuapp.com/api/login', { username, password })
             .then(res => {
                 console.log(res.data)
                 dispatch(login(res.data.user))

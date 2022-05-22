@@ -57,7 +57,7 @@ const Register = () => {
         };
         console.log(newUser);
 
-        axios.post('http://localhost:5000/api/signup', newUser)
+        axios.post('https://ahdrwa-backend.herokuapp.com/api/signup', newUser)
             .then(res => {
                 dispatch(register(res.data.user))
                 toggleModal();
