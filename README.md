@@ -10,6 +10,8 @@
 
 # Demo
 
+<img src="https://github.com/Besufikad17/AHDRWA/media/demo.gif" width="400" height="400" />
+
 ![image](https://github.com/Besufikad17/AHDRWA/media/demo.gif)
 
 # Devs
