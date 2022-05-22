@@ -8,7 +8,10 @@
 - [Bot](https://github.com/binitech/ahdrwa-bot)
 - [Docs](https://stupendous-meringue-4b95b0.netlify.app/)
 
-# Demo
+# ⚡ Presentation ⚡
+- [Canva Link]()
+
+# ⚡ Demo ⚡
 
 ![img1](media/1.png)
 ![img1](media/2.png)
@@ -20,10 +23,10 @@
 ![img1](media/8.jpg)
 ![img1](media/9.jpg)
 
-# Devs
+# ⚡ Devs ⚡
 
-[Besufikad Micheal](https://github.com/Besufikad17)
+[👤 **Besufikad Mikael (Bese)**](https://github.com/Besufikad17)
 
-[Mikiyas Godana](https://github.com/mikigode)
+[👤 **Mikiyas Godana (MikiGode)**](https://github.com/mikigode)
 
-[Tamirat Ayalew](https://github.com/binitech)
+[👤 **Tamirat Ayalew (вιηι)**](https://github.com/binitech)
