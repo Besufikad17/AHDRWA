@@ -1,8 +1,8 @@
-#⚡ Introduction ⚡
+# ⚡ Introduction ⚡
 
 ፻፲፫ is project developed in May 20 -22, 2022 by CESC ASTU Development Division members as Hackthon based on [Machine learning app](https://github.com/mukerem/AmharicHandwrittenDigitRecognitionMobileApp/tree/master) made by [Mukerem Ali]()
 
-##⚡ Components ⚡
+# ⚡ Components ⚡
 
 - [Backend](https://github.com/Besufikad17/AHDRWA-backend)
 - [Bot](https://github.com/binitech/ahdrwa-bot)
